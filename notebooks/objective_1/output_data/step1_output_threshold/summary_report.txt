@@ -1,0 +1,58 @@
+=================================================================
+MAHALANOBIS OUTLIER REMOVAL + GROUPED SAMPLE SPLIT
+REVISED VERSION — Reviewer Response
+Reference: De Maesschalck et al. (2000)
+=================================================================
+
+-- METHOD CHANGE FROM ORIGINAL -----------------------
+  ORIGINAL : Kennard-Stone image-level split (data leakage)
+  REVISED  : Grouped sample-level split (reviewer compliant)
+  REASON   : Images of the same physical soil sample must
+             never appear on both sides of the split.
+
+-- DATASET -------------------------------------------
+  Total images (master merged)  : 674
+  Feature variables             : 31
+
+-- MAHALANOBIS CONFIGURATION -------------------------
+  Covariance inverse : np.linalg.pinv (pseudo-inverse)
+  Confidence level   : 99%
+  Chi-sq threshold   : chi2.ppf(0.99, df=31) = 52.1914
+  Distance threshold : sqrt(chi2) = 7.2244
+  Outlier criterion  : D > 7.2244
+
+-- OUTLIER DETECTION RESULTS -------------------------
+  Outliers removed : 66
+  Clean samples    : 608
+
+  Outlier image numbers:
+    [1, 21, 22, 24, 25, 28, 30, 31, 33, 34, 36, 40, 42, 109, 138, 214, 215, 246, 271, 274, 278, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 297, 301, 304, 336, 346, 350, 354, 358, 360, 362, 363, 364, 438, 439, 442, 470, 475, 492, 493, 500, 517, 565, 577, 578, 579, 675, 690, 691, 700, 701, 702, 703, 704, 712, 720]
+
+-- GROUPED SAMPLE SPLIT ------------------------------
+  Calibration set : 461 images  (15 samples)
+  Validation set  : 147 images  (4 samples)
+
+  Validation samples (held out entirely):
+    Sample  3  Crosby (Mulch plots)    SOC=2.12  17 images
+    Sample 12  Kokomo (Soybean)        SOC=1.92  40 images
+    Sample 13  Miami (Corn)            SOC=2.5  35 images
+    Sample 15  Crosby (Corn)           SOC=1.75  55 images
+
+  Calibration samples: [1, 2, 4, 5, 6, 8, 9, 10, 11, 14, 16, 17, 18, 19, 20]
+
+-- OUTPUT FILES --------------------------------------
+  master_merged.csv            - 674 rows
+  outlier_detection_results.csv- 674 rows + distance & flag
+  soil_features_cleaned.csv    - 608 rows (outliers removed)
+  image_sample_mapping.csv     - image → sample mapping
+  calibration_set.csv          - 461 rows (grouped split)
+  validation_set.csv           - 147 rows (grouped split)
+  mahalanobis_plot.png         - distance plot
+
+-- DISTANCE STATISTICS --------------------------------
+  Min    : 2.2300
+  Max    : 24.7790
+  Mean   : 4.7774
+  Median : 4.1351
+  Std    : 2.2660
+=================================================================

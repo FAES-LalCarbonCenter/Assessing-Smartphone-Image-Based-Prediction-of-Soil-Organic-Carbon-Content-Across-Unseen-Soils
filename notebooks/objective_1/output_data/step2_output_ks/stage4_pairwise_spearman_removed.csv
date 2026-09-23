@@ -1,0 +1,17 @@
+removed_feature,retained_feature,pairwise_abs_spearman
+luv_v,lab_b,0.9851041406802874
+mean_s,median_s,0.956184715922243
+mean_v,mean_r,0.9999995757325826
+median_r,mean_r,0.995685995067385
+median_v,mean_r,0.995685995067385
+mean_g,mean_r,0.9767099249725499
+luv_L,mean_r,0.9847411374779169
+lab_L,mean_r,0.9847411374779169
+xyz_Y,mean_r,0.9847411374779169
+xyz_X,mean_r,0.9892993817575193
+mean_gray,mean_r,0.9818193774809038
+median_g,mean_r,0.9727076340399291
+median_gray,mean_r,0.9766160858320271
+contrast,entropy,0.9591589153009499
+mean_b,xyz_Z,0.9922398943743838
+median_b,xyz_Z,0.9914263237852293

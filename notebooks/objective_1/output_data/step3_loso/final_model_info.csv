@@ -1,0 +1,2 @@
+model,n_training_images,n_samples,features,use_for
+WeightedEnsemble_L2,658,20,"['SI', 'lab_b', 'median_h', 'CI', 'median_s', 'luv_u', 'mean_r', 'entropy', 'xyz_Z']","moisture_analysis, field_vs_lab, feature_importance"

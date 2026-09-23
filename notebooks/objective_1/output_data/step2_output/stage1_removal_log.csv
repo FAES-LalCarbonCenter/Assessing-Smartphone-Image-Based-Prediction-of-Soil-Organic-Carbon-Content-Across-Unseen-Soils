@@ -1,0 +1,11 @@
+feature,reason,value
+mean_b,not_significant,0.6391985525694028
+median_b,not_significant,0.879546982386897
+mean_gray,low_variance,0.004691347203810702
+median_gray,low_variance,0.005460661919855182
+energy,low_variance,4.58466564593849e-06
+homogeneity,low_variance,5.1999331525185506e-05
+lab_a,not_significant,0.5272296717246377
+xyz_X,low_variance,0.002978294688343623
+xyz_Y,low_variance,0.003266464328432562
+xyz_Z,low_variance,0.001258659934051712

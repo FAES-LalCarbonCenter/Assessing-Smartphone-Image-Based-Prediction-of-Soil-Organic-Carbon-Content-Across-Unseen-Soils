@@ -1,0 +1,96 @@
+================================================================================
+MULTI-CRITERIA FEATURE SELECTION (MCFS)
+CALIBRATION SET ONLY - NO DATA LEAKAGE
+================================================================================
+
+── PROPER CROSS-VALIDATION METHODOLOGY ──────────────────────────────
+  ✅ Feature selection performed on CALIBRATION SET ONLY
+  ✅ Validation set was NOT used for feature selection
+  ✅ Same features applied to validation set
+  ✅ No data leakage - publication-ready approach
+
+── DATASET ─────────────────────────────────────────────────────────
+  Calibration set:  511 samples (used for feature selection)
+  Validation set:   147 samples (features applied only)
+  Target variable:  soc
+  Candidate features: 31
+
+── STAGE 1: QUALITY PRE-FILTERING ──────────────────────────────────
+  Thresholds:
+    Min variance:        > 0.01
+    Max missing:         < 20.0%
+    Significance:        p < 0.1
+
+  Results (calibration set):
+    Input features:      31
+    Passed filter:       21
+    Removed:             10
+
+── STAGE 2: MUTUAL INFORMATION ─────────────────────────────────────
+  Method: sklearn.feature_selection.mutual_info_regression
+  Random state: 42
+  N neighbors: 5
+  Data: Calibration set only (511 samples)
+
+── STAGE 3: PCA-MI HYBRID SCORING ──────────────────────────────────
+  Weighting scheme:
+    PCA weight (multivariate):    70%
+    MI weight (non-linear):       30%
+
+  Combined Score = 0.7 × PCA_Score + 0.3 × MI_Score
+
+  Feature selection:
+    Target features:     20
+    Bounds:              25
+    Selected for LASSO:  20
+
+── STAGE 4: LASSO REGULARIZATION ───────────────────────────────────
+  Method: LassoCV (5-fold cross-validation)
+  Alpha values tested: 100
+  Data: Calibration set only
+
+  Results:
+    Input to LASSO:      20
+    Final selected:      2
+    Removed by LASSO:    18
+
+── FINAL SELECTED FEATURES ─────────────────────────────────────────
+  Total: 2 features
+  Reduction: 93.5% (31 → 2)
+
+  ✅ These features selected from CALIBRATION SET
+  ✅ Applied to VALIDATION SET (no leakage)
+
+  Ranked by combined score:
+
+  Rank   Feature                   Combined   PCA        MI         LASSO Coef
+  ------ ------------------------- ---------- ---------- ---------- ------------
+  6      entropy                   0.8594     0.8880     0.7928     0.0958      
+  7      SI                        0.8462     0.9134     0.6895     -0.1520     
+
+── OUTPUT FILES ────────────────────────────────────────────────────
+  CALIBRATION SET:
+    calibration_selected_features.csv - calibration with selected features
+    stage1_removal_log.csv            - removed features with reasons
+    stage2_mutual_information.csv     - MI scores
+    stage3_pca_scores.csv             - PCA scores
+    stage3_combined_scores.csv        - PCA-MI hybrid scores
+    stage4_lasso_coefficients.csv     - LASSO coefficients
+
+  VALIDATION SET:
+    validation_selected_features.csv  - validation with SAME features
+
+  FEATURE LIST:
+    selected_features_list.txt        - just feature names
+
+  REPORTS:
+    feature_selection_plots.png       - 4-panel visualization
+    feature_selection_report.txt      - this report
+
+── READY FOR MODEL TRAINING ────────────────────────────────────────
+  Next steps:
+    1. Train models on calibration_selected_features.csv
+    2. Validate on validation_selected_features.csv
+    3. Both datasets have SAME {len(final_features)} features
+
+================================================================================

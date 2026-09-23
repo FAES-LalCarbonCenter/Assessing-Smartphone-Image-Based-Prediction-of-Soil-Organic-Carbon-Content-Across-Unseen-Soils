@@ -1,0 +1,52 @@
+========================================================================
+GROUPED PHYSICAL-SAMPLE SPLIT + CALIBRATION-ONLY OUTLIER QC
+========================================================================
+
+-- DATASET -----------------------------------------------
+Total images                      : 731
+Physical soil samples             : 20
+
+-- GROUPED SPLIT ------------------------------------------
+Calibration before outlier QC     : 590 images
+Calibration physical soils        : 16
+Validation images                 : 141
+Validation physical soils         : 4
+Validation samples                : [3, 7, 13, 15]
+Physical sample overlap           : []
+
+-- MAHALANOBIS QC -----------------------------------------
+Applied to                        : CALIBRATION ONLY
+Image predictors used             : 31
+Predictor list                    : ['mean_r', 'mean_g', 'mean_b', 'median_r', 'median_g', 'median_b', 'mean_h', 'mean_s', 'mean_v', 'median_h', 'median_s', 'median_v', 'mean_gray', 'median_gray', 'contrast', 'energy', 'homogeneity', 'entropy', 'RI', 'CI', 'HI', 'SI', 'lab_L', 'lab_a', 'lab_b', 'luv_L', 'luv_u', 'luv_v', 'xyz_X', 'xyz_Y', 'xyz_Z']
+Target SOC included               : NO
+Moisture included                 : NO
+Sample_No included                : NO
+Confidence level                  : 99%
+Distance threshold                : 7.2244
+Calibration outliers removed      : 64
+Final clean calibration images    : 526
+
+-- VALIDATION PROTECTION ----------------------------------
+Validation used for outlier QC    : NO
+Validation used for feature selection: NO
+All images from one physical soil remain together.
+
+-- VALIDATION BREAKDOWN -----------------------------------
+Sample  3 :  21 images | SOC=[2.12, 3.34]
+Sample  7 :  26 images | SOC=[5.34, 6.72]
+Sample 13 :  39 images | SOC=[2.5]
+Sample 15 :  55 images | SOC=[1.75]
+
+-- DISTANCE STATISTICS -----------------------------------
+Minimum                           : 2.2098
+Maximum                           : 24.2487
+Mean                              : 4.7904
+Median                            : 4.0792
+Standard deviation                : 2.4500
+
+-- FINAL OUTPUT ------------------------------------------
+Calibration                       : 526 images from 16 soils
+Validation                        : 141 images from 4 soils
+Calibration soils                 : [1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 14, 16, 17, 18, 19, 20]
+Validation soils                  : [3, 7, 13, 15]
+========================================================================

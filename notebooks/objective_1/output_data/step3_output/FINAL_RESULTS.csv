@@ -1,0 +1,2 @@
+Best_Model,Internal_Validation,Independent_Validation,R²,RMSE,MAE,RPD,RPIQ,Capability
+WeightedEnsemble_L2,AutoML 80/20 split on 461 samples,197 samples (Kennard-Stone),-0.3427511850970488,2.3856511612356375,1.5248580884933471,0.8629829746471459,1.4335708655026604,MODERATE

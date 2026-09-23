@@ -1,0 +1,3 @@
+Comparison,Observed_Difference,CI_Lower,CI_Upper
+RMSE: model - calibration mean baseline,-0.6184207980635112,-1.265189636243059,-0.023504591125203974
+MAE: model - calibration mean baseline,-0.3405271456682355,-0.7069775754573149,-0.09926573278126627

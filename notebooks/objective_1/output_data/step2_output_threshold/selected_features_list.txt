@@ -1,0 +1,9 @@
+SI
+luv_v
+median_h
+mean_r
+CI
+luv_u
+median_s
+xyz_Z
+homogeneity

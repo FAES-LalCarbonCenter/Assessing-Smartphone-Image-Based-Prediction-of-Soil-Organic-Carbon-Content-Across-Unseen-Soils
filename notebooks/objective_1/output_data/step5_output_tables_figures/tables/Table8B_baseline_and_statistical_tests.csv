@@ -1,0 +1,8 @@
+Validation design,Analysis,Estimate / statistic,95% CI lower,95% CI upper,Two-sided p-value
+Sample-grouped,,,-0.0975909731904378,0.1217315841840985,
+Sample-grouped,,,-0.0679176566854407,0.0796302730798479,
+KS image-level,RMSE: model - calibration mean baseline,-0.6184207980635112,-1.265189636243059,-0.0235045911252039,
+KS image-level,MAE: model - calibration mean baseline,-0.3405271456682355,-0.7069775754573149,-0.0992657327812662,
+Sample-grouped,Exact soil-level sign-flip test (MSE),-0.2452676246946372,,,0.875
+KS image-level,Paired soil-level Wilcoxon signed-rank test (MSE),54.0,,,0.058258056640625
+KS image-level,Paired soil-level Wilcoxon signed-rank test (MAE),40.0,,,0.0136165618896484

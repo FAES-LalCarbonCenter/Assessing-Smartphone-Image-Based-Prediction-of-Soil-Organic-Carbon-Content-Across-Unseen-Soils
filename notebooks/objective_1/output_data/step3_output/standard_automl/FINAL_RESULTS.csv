@@ -1,0 +1,2 @@
+Best_Model,Calibration_Total_Images,Calibration_Total_Samples,Internal_Train_Samples,Internal_Tuning_Samples,Final_Validation_Images,Final_Validation_Samples,Image_R2,Image_RMSE,Image_MAE,Image_RPD,Image_RPIQ,Sample_R2,Sample_RMSE,Sample_MAE
+WeightedEnsemble_L2,489,15,12,3,169,5,-0.08182755432960431,1.6521136537419103,0.8433359931629789,0.9614373300105243,0.45396392572708766,-0.1746841648833355,1.4422267330401213,0.8299635028839111

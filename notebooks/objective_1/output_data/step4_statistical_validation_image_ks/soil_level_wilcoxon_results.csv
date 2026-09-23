@@ -1,0 +1,3 @@
+Comparison,N_Physical_Soils,Wilcoxon_Statistic,Two_Sided_P
+Per-soil MSE: model vs calibration-mean baseline,20,54.0,0.058258056640625
+Per-soil MAE: model vs calibration-mean baseline,20,40.0,0.013616561889648438

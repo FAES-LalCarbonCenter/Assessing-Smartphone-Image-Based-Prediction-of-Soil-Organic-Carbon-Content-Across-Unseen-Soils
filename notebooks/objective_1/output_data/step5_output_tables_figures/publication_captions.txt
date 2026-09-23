@@ -1,0 +1,42 @@
+TABLE CAPTIONS
+==============
+
+Table 2A. AutoGluon candidate regression models evaluated under the sample-grouped validation framework.
+
+Table 2B. AutoGluon candidate regression models evaluated under the Kennard-Stone image-level validation framework.
+
+Table 3. Descriptive statistics of soil organic carbon (SOC), soil moisture content, and numerical image-derived color and texture predictors.
+
+Table 4A. Final image-derived predictors retained by the four-stage feature-selection procedure under sample-grouped and Kennard-Stone image-level validation.
+
+Table 4B. Number of predictors retained at each stage of the four-stage feature-selection procedure for the two validation designs.
+
+Table 5. Group-aware internal cross-validation performance and composite ranking of AutoGluon models for the sample-grouped analysis.
+
+Table 6. Group-aware internal cross-validation performance and composite ranking of AutoGluon models for the Kennard-Stone image-level analysis.
+
+Table 7. External validation performance of the final AutoGluon model under sample-grouped and Kennard-Stone image-level validation.
+
+Table 8A. Physical-soil cluster-bootstrap point estimates and 95% confidence intervals for external-validation performance metrics.
+
+Table 8B. Model-versus-calibration-mean baseline comparisons and soil-level inferential tests.
+
+
+FIGURE CAPTIONS
+===============
+
+Fig. 4. Observed versus predicted soil organic carbon (SOC) for the sample-grouped external validation set. The dashed line represents perfect 1:1 agreement between observed and predicted SOC, and the solid line represents the fitted linear regression relationship. All images from each validation soil were excluded from model development.
+
+Fig. 5. Observed versus predicted soil organic carbon (SOC) for the Kennard-Stone image-level validation set. The dashed line represents perfect 1:1 agreement and the solid line represents the fitted linear regression relationship. Because images from all 20 physical soils occurred in both calibration and validation, this figure represents prediction of new images of soils already represented during model development.
+
+Fig. 6. Permutation importance of the final predictors in the sample-grouped model. Importance is expressed as the increase in validation RMSE after randomly permuting each predictor; larger positive values indicate a greater contribution to prediction accuracy. Error bars represent the standard deviation across repeated permutations.
+
+Fig. 7. Permutation importance of the final predictors in the Kennard-Stone image-level model. Importance is expressed as the increase in validation RMSE after randomly permuting each predictor; larger positive values indicate a greater contribution to prediction accuracy. Error bars represent the standard deviation across repeated permutations.
+
+Fig. 8A. Comparison of R², RPD, and RPIQ between sample-grouped external validation and Kennard-Stone image-level validation.
+
+Fig. 8B. Comparison of RMSE and MAE between sample-grouped external validation and Kennard-Stone image-level validation.
+
+Fig. 9A. Physical-soil cluster-bootstrap point estimates and 95% confidence intervals for R² under the sample-grouped and Kennard-Stone image-level validation designs.
+
+Fig. 9B. Physical-soil cluster-bootstrap point estimates and 95% confidence intervals for RMSE under the sample-grouped and Kennard-Stone image-level validation designs.

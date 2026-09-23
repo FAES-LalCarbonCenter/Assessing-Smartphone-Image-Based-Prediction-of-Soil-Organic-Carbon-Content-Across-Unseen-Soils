@@ -1,0 +1,3 @@
+Validation design,Selected model,Validation images,Physical soils represented,Physical soils overlapping calibration,R²,RMSE,MAE,RPD,RPIQ,Bias
+Sample-grouped external validation,WeightedEnsemble_L2,141,4,0,-0.2056,1.9482,1.133,0.914,0.385,-0.8709
+KS image-level validation,WeightedEnsemble_L2,146,20,20,0.8265,0.4415,0.2867,2.4089,2.0837,0.0838

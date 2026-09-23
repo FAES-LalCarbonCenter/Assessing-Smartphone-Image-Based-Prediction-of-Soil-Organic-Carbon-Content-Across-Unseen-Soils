@@ -1,0 +1,24 @@
+===========================================================================
+KS STEP 2 FEATURE-SELECTION SUMMARY
+===========================================================================
+Calibration images                 : 521
+Validation images                  : 146
+Candidate predictors               : 31
+Stage 1 retained                   : 31
+Stage 2 retained                   : 30
+PCA retained                       : 24
+Final predictors                   : 8
+
+Final selected predictors:
+  1. SI
+  2. lab_b
+  3. CI
+  4. median_s
+  5. luv_u
+  6. mean_r
+  7. entropy
+  8. xyz_Z
+
+Validation used for feature selection: NO
+Feature-selection logic matches sample-grouped Step 2: YES
+===========================================================================

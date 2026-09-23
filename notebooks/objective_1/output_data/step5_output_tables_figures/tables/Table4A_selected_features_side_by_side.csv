@@ -1,0 +1,10 @@
+Rank,Sample-grouped selected feature,KS image-level selected feature,Common to both final sets
+1,SI,SI,Yes
+2,lab_b,lab_b,Yes
+3,median_h,CI,
+4,CI,median_s,Yes
+5,mean_r,luv_u,Yes
+6,luv_u,mean_r,Yes
+7,median_s,entropy,Yes
+8,xyz_Z,xyz_Z,Yes
+9,entropy,,Yes

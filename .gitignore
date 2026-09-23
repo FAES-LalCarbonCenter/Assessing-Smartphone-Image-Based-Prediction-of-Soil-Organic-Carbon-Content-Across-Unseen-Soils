@@ -1,0 +1,18 @@
+.venv/
+venv/
+soc_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
+
+# AutoGluon / trained model directories
+**/models/
+**/AutogluonModels/
+
+# Temporary files
+*.tmp
+*.log

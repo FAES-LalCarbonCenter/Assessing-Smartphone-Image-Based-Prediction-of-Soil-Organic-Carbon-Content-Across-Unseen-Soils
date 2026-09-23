@@ -1,0 +1,2 @@
+Best_Model,Internal_Validation,Independent_Validation,R²,RMSE,MAE,RPD,RPIQ,Capability
+WeightedEnsemble_L2,4-fold GroupKFold by Sample_No,4 held-out soil-condition rows from 4 physical samples,-1.2060391825704952,0.43557935489863236,0.3565091802311592,0.6732763959869956,0.8494433811862047,MODERATE

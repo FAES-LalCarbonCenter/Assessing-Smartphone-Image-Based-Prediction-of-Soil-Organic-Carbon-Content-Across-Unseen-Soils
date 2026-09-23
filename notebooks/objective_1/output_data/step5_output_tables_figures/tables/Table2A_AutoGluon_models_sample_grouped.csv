@@ -1,0 +1,11 @@
+Model,Family,Key characteristics,Validation framework
+WeightedEnsemble_L2,Stacked ensemble,AutoGluon level-2 weighted ensemble combining predictions from base models.,Sample-grouped
+NeuralNetTorch,Neural network,Multi-layer feed-forward neural network implemented with PyTorch.,Sample-grouped
+NeuralNetFastAI,Neural network,Feed-forward neural network implemented through the FastAI backend.,Sample-grouped
+LightGBMXT,Gradient boosting,LightGBM extra-trees variant using increased split randomness.,Sample-grouped
+CatBoost,Gradient boosting,Gradient boosting with ordered boosting and symmetric tree construction.,Sample-grouped
+LightGBM,Gradient boosting,Leaf-wise gradient-boosted decision trees with histogram-based splitting.,Sample-grouped
+ExtraTreesMSE,Randomized tree ensemble,Extremely randomized regression trees optimized using squared-error loss.,Sample-grouped
+XGBoost,Gradient boosting,Regularized gradient-boosted decision trees using depth-wise growth.,Sample-grouped
+LightGBMLarge,Gradient boosting,Larger LightGBM configuration with increased model capacity.,Sample-grouped
+RandomForestMSE,Bagged tree ensemble,Bootstrap-aggregated regression trees optimized using squared-error loss.,Sample-grouped

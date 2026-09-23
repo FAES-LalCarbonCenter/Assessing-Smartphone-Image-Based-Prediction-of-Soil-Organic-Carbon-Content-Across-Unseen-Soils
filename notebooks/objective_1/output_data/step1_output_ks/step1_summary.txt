@@ -1,0 +1,18 @@
+=================================================================
+KS STEP 1 SUMMARY
+=================================================================
+Total images         : 731
+KS split (80/20)     : 585 cal / 146 val
+Outliers removed     : 64 (Mahalanobis D > 7.2244)
+Clean calibration    : 521
+Validation           : 146 (unchanged — no outlier removal on val)
+
+LEAKAGE CHECK:
+  Samples on both sides : 20 of 20
+  Straddling samples    : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+RATIO COMPARISON:
+  Sample-based split : 4/20 samples = 20.0% val  (146 val images)
+  KS image split     : 80/20 = 20.0% val  (146 val images)
+  Ratio matched      : YES — both use ~20% for validation
+=================================================================
