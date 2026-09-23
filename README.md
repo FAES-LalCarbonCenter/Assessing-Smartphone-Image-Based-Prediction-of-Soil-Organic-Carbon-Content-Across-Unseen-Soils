@@ -1,0 +1,1 @@
+# Assessing-Smartphone-Image-Based-Prediction-of-Soil-Organic-Carbon-Content-Across-Unseen-Soils
