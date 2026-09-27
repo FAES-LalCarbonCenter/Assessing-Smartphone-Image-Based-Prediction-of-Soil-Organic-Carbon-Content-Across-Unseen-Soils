@@ -16,3 +16,54 @@ __pycache__/
 # Temporary files
 *.tmp
 *.log
+
+# --------------------------------------------------
+# Python / virtual environment
+# --------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# --------------------------------------------------
+# VS Code / OS files
+# --------------------------------------------------
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --------------------------------------------------
+# Jupyter
+# --------------------------------------------------
+.ipynb_checkpoints/
+
+# --------------------------------------------------
+# AutoGluon / ML model artifacts
+# --------------------------------------------------
+AutogluonModels/
+**/AutogluonModels/
+**/models/
+**/fold*/
+**/final_all_samples/
+
+# Model binaries / serialized artifacts
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# --------------------------------------------------
+# Temporary logs / caches
+# --------------------------------------------------
+*.log
+*.tmp
+*.bak
+.cache/
+.pytest_cache/
+
+# --------------------------------------------------
